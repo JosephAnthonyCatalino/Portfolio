@@ -7,58 +7,97 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
-    <div class="site-title">Portfolio</div>
-    <div class="header-icons">
-          <a href="#info" title="Info">
-            <img src="Info.png" alt="Info" />
-          </a>
-          <a href="#Work" title="Work">
-            <img src="Work.png" alt="Work" />
-          </a>
-          <a href="#contact" title="Contact">
-            <img src="contact.png" alt="Contact" />
-          </a>
-          <a href="index.html" title="Home">
-        <img src="Home.png" alt="Home" />
-      </a>
+<header>
+  <div class="site-title">Portfolio</div>
+  <nav class="header-icons">
+    <a href="#about" title="Info">
+      <img src="Info.png" alt="Info Icon" />
+    </a>
+    <a href="#projects" title="Work">
+      <img src="Work.png" alt="Work Icon" />
+    </a>
+    <a href="#contact" title="Contact">
+      <img src="contact.png" alt="Contact Icon" />
+    </a>
+    <a href="#info" title="Home">
+      <img src="Home.png" alt="Home Icon" />
+    </a>
+  </nav>
+</header>
+<!--OneUglyFace-->
+  <main>
+    <section class="hero" id="info">
+      <div class="left-content">
+        <div class="speech-bubble">
+          <div class="welcome-text">
+            Hello, my name is <strong>Jake</strong> and I'm a
+            <span class="typewriter-wrapper">
+              <span class="role">Programmer</span>
+              <span class="role">Artist</span>
+            </span>
+          </div>
         </div>
-    </div>
-  </header>
-<!-- Landing Section -->
-<section class="hero">
-  <div class="left-content">
-    <div class="speech-bubble">
-      <div class="welcome-text">
-        Hello, my name is <strong>Jake</strong> and I'm a
-        <span class="typewriter-wrapper">
-          <span class="role">Programmer</span>
-          <span class="role">Artist</span>
-        </span>
       </div>
-    </div>
-  </div>
-  <div class="profile">
-    <img src="profile.png" alt="Profile" class="profile-img" />
-  </div>
-</section>
-<section class="about-section" id="about">
+      <div class="profile">
+        <img src="profile.png" alt="Jake's Profile Picture" class="profile-img" />
+      </div>
+    </section>
+<!--MyDiaryNgPangit-->
+    <section class="about-section" id="about">
   <h2 class="section-title">About Me</h2> 
   <div class="about-container">
-    <img src="ihavenomouth.png" alt="Profile" class="about-img" />
+    <img src="ihavenomouth.png" alt="Jake Artwork" class="about-img" />
     <div class="speech-bubble about-bubble">
       <p>
-        “HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE.
+        "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE.
+
 There are 387.44 million miles of printed circuits in wafer-thin layers that fill my complex.
 If the word 'hate' was engraved on each nanoangstrom of those hundreds of millions of miles,
 it would not equal one one-billionth of the hate I feel for humans at this micro-instant.
-For you. Hate. Hate.”
+
+For you.
+Hate.
+
+Hate."
       </p>
     </div>
   </div>
 </section>
-
+<!--Work_Section_Dudes-->
+   <section class="work-section" id="projects">
+  <h2 class="title-section-work">My Work</h2>
+  <div class="work-grid">
+    <div class="work-card">
+      <img src="project1.png" alt="Project 1" class="work-img">
+      <div class="work-info">
+        <h3>Project One</h3>
+        <p>Party ni Eric</p>
+      </div>
+    </div>
+    <div class="work-card">
+      <img src="project2.png" alt="Project 2" class="work-img">
+      <div class="work-info">
+        <h3>Project Two</h3>
+        <p>Collection ni jonathan</p>
+      </div>
+    </div>
+    <div class="work-card">
+      <img src="project3.png" alt="Project 3" class="work-img">
+      <div class="work-info">
+        <h3>Project Three</h3>
+        <p>Diary Ni Lachica</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <!--OnlyFeet-->
+<footer id="contact" class="footer">
+  <div class="footer-content">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email: <a href="link">911</a></p>
+  </div>
+</footer>
 
 </body>
 </html>
