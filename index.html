@@ -2,102 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jake's creative portfolio showcasing design, art, and development work">
+  <title>Jake's Portfolio | Comic-Style Designer & Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 <body>
-<header>
-  <div class="site-title">Portfolio</div>
-  <nav class="header-icons">
-    <a href="#about" title="Info">
-      <img src="Info.png" alt="Info Icon" />
-    </a>
-    <a href="#projects" title="Work">
-      <img src="Work.png" alt="Work Icon" />
-    </a>
-    <a href="#contact" title="Contact">
-      <img src="contact.png" alt="Contact Icon" />
-    </a>
-    <a href="#info" title="Home">
-      <img src="Home.png" alt="Home Icon" />
-    </a>
-  </nav>
-</header>
-<!--OneUglyFace-->
+  <header role="banner">
+    <div class="site-title">Catalino</div>
+    <nav class="header-icons" aria-label="Main navigation">
+      <a href="#about" aria-label="About"><img src="Info.png" alt="About me" /></a>
+      <a href="#projects" aria-label="Projects"><img src="Work.png" alt="My projects" /></a>
+      <a href="#contact" aria-label="Contact"><img src="contact.png" alt="Contact me" /></a>
+      <a href="#info" aria-label="Home"><img src="Home.png" alt="Return home" /></a>
+    </nav>
+  </header>
+
   <main>
-    <section class="hero" id="info">
-      <div class="left-content">
+    <!-- UglyDaklyn -->
+    <section class="hero" div id="info" aria-labelledby="hero-heading">
+      <div class="profile">
+        <img src="profile.png" alt="Jake's profile picture - cartoon character with bright colors" class="profile-img" />
         <div class="speech-bubble">
           <div class="welcome-text">
-            Hello, my name is <strong>Jake</strong> and I'm a
-            <span class="typewriter-wrapper">
-              <span class="role">Programmer</span>
-              <span class="role">Artist</span>
-            </span>
+            <h1 id="hero-heading">Hello, my name is <strong>Joseph Anthony</strong></h1>
+            <p>and I'm a <span class="typewriter-wrapper">
+              <span class="role">DESIGNER</span>
+              <span class="role">ARTIST</span>
+              <span class="role">DEVELOPER</span>
+            </span></p>
+            <p class="intro-description">I'm a programmer, designer, and artist with a passion for creating beautiful, functional digital experiences. I love blending creativity with technology, turning ideas into visually captivating and interactive projects. Always learning and experimenting, I strive to turn imagination into reality.</p>
+            <a class="hire-button" href="#" id="hireMeBtn">HIRE ME</a>
+            <div id="jumpscare" style="display: none;" class="jumpscare-overlay">
+            <button id="backBtn" class="back-button">← Back</button>
+            <img src="jumpscare.png" alt="Hire Me!" />
+          </div>
+          </div>
           </div>
         </div>
       </div>
-      <div class="profile">
-        <img src="profile.png" alt="Jake's Profile Picture" class="profile-img" />
+    </section>
+
+    <!-- MMk section-->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About Me</h2>
+      <div class="about-container">
+        <img src="Chin2.jpg" alt="Jake's artwork - comic style illustration" class="about-img" />
+        <div class="about-bubble">
+          <p>
+ I'm a passionate artist studying Computer Science, aiming to blend creativity with technology to create innovative, meaningful projects. Always eager to learn and grow, I strive to expand my skills in design, development, and storytelling, with the goal of becoming a well-rounded professional who brings unique perspectives to tech.
+  </p>
+  <p><strong>Name:</strong> Joseph Anthony D. Catalino</p>
+  <p><strong>Birthday:</strong> June 7, 2005</p>
+  <p><strong>From:</strong> Philippines</p>
+</div>
+
       </div>
     </section>
-<!--MyDiaryNgPangit-->
-    <section class="about-section" id="about">
-  <h2 class="section-title">About Me</h2> 
-  <div class="about-container">
-    <img src="ihavenomouth.png" alt="Jake Artwork" class="about-img" />
-    <div class="speech-bubble about-bubble">
-      <p>
-        "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE.
 
-There are 387.44 million miles of printed circuits in wafer-thin layers that fill my complex.
-If the word 'hate' was engraved on each nanoangstrom of those hundreds of millions of miles,
-it would not equal one one-billionth of the hate I feel for humans at this micro-instant.
+    <!-- Art Station -->
+    <section class="work-section" id="projects" aria-labelledby="projects-heading">
+<h2 id="projects-heading" class="section-title title-section-work">My Work</h2>
+<div class="work-grid">
+  <article class="work-card" data-full="Nemo.png">
+    <img src="Nemo.png" alt="Art" class="work-img" />
+    <div class="work-info">
+      <h3>Nemo Sum</h3>
+      <p>The feeling of the Loneliness the invisible to human eyes and the unknown</p>
+    </div>
+  </article>
 
-For you.
-Hate.
+  <article class="work-card" data-full="Magician.jpg">
+    <img src="Magician.jpg" alt="Art 2" class="work-img" />
+    <div class="work-info">
+      <h3>Magician</h3>
+      <p>The Magic Sarap</p>
+    </div>
+  </article>
 
-Hate."
-      </p>
+  <article class="work-card" data-full="Store_Clerk.jpg">
+    <img src="Store_Clerk.jpg" alt="Art 3" class="work-img" />
+    <div class="work-info">
+      <h3>Store Clerk</h3>
+      <p>The Scariest possible future</p>
     </div>
-  </div>
-</section>
-<!--Work_Section_Dudes-->
-   <section class="work-section" id="projects">
-  <h2 class="title-section-work">My Work</h2>
-  <div class="work-grid">
-    <div class="work-card">
-      <img src="project1.png" alt="Project 1" class="work-img">
-      <div class="work-info">
-        <h3>Project One</h3>
-        <p>Party ni Eric</p>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="project2.png" alt="Project 2" class="work-img">
-      <div class="work-info">
-        <h3>Project Two</h3>
-        <p>Collection ni jonathan</p>
-      </div>
-    </div>
-    <div class="work-card">
-      <img src="project3.png" alt="Project 3" class="work-img">
-      <div class="work-info">
-        <h3>Project Three</h3>
-        <p>Diary Ni Lachica</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </article>
+</div>
+<div id="imageModal" class="modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+    </section>
   </main>
-  <!--OnlyFeet-->
-<footer id="contact" class="footer">
-  <div class="footer-content">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via email: <a href="link">911</a></p>
+
+
+  <!-- Onlny Foot -->
+<footer class="site-footer" id="contact" aria-labelledby="contact-heading">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2 id="contact-heading">Let's Talk</h2>
+      <p>
+        Every project starts with a chat. I'd be happy to discuss your project 
+        and how I can help bring your vision to life.
+      </p>
+      <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-info">
+        <p><strong>Email:</strong> <a href="mailto:hello@buuuk.com">hello@buuuk.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+6588735994">(+65) 8873 5994</a></p>
+      </div>
+      <div class="social-icons" aria-label="Social media links">
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2023 Jake's Portfolio. All rights reserved.
+    </div>
   </div>
 </footer>
-
+  <script src="animation.js"></script>
 </body>
 </html>
